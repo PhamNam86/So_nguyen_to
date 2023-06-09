@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main()
+{
+    int x,n;
+
+
+    printf("nhap n la: ");
+    scanf("%d", &n);
+
+    int s = 0;
+    int a = 1;
+
+    for (int i = 4; i < n; i++)
+    {
+        /*
+        if (i%2 == 0) 
+        {
+            printf("%d khong la so nguyen to\n",i);
+        }
+        */
+            
+        
+
+        for (int j = 3; j < i; j++) 
+        {
+            if (i % 2 == 0) 
+            {
+                //printf("%d khong la so nguyen to\n", i);
+                break;
+            }
+
+
+            if (i % j == 0) 
+            {
+                //printf("%d khong la so nguyen to\n", i);
+                break;
+            }
+
+            printf("%d la so nguyen to\n", i);
+            break;
+        }
+
+                
+            
+    }
+
+    
+
+  return 0;
+}
